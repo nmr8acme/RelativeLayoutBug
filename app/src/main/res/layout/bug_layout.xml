@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:background="#248">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#842"
+
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+
+        android:scaleType="center"
+        android:src="@android:drawable/sym_def_app_icon"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#428"
+
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/image"
+
+        android:fontFamily="sans-serif-thin"
+        android:text="100°"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#482"
+
+        android:layout_alignBaseline="@id/text"
+        android:layout_toRightOf="@id/text"
+
+        android:fontFamily="sans-serif-thin"
+        android:text="10 minutes ago"/>
+
+    <TextView
+        android:id="@+id/yet_more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#284"
+
+        android:layout_above="@id/more_text"
+        android:layout_toRightOf="@id/text"
+
+        android:fontFamily="sans-serif-thin"
+        android:text="Portland, OR"/>
+
+</RelativeLayout>
